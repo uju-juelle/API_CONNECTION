@@ -1,6 +1,7 @@
+from decouple import config
 # import requests
 
-# endpoint = "https://newsdata.io/api/1/news?country=ng&apikey=pub_23721d1ae0c027a01d37b18c235522754147c"
+# endpoint = "https://newsdata.io/api/1/news?country=ng&apikey=pub_config('pub')"
 
 # response = requests.get(endpoint)
 
@@ -37,7 +38,7 @@ import requests
 
 # News.objects.create(title=api_news_title, content=api_news_full_description, author=api_news_creator, source=api_news_source_id)
 
-endpoint = "https://newsdata.io/api/1/news?country=ng&apikey=pub_23721d1ae0c027a01d37b18c235522754147c"
+endpoint = "https://newsdata.io/api/1/news?country=ng&apikey=pub_{config}('pub')"
 
 response = requests.get(endpoint)
 news_dictionary = dict(response.json())
