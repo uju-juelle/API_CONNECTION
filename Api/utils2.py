@@ -13,7 +13,7 @@ news_dictionary = {'status': 'success', 'totalResults': 753, 'results': [{'title
 
 # print(news_dictionary['results'][0])
 
-# print(news_dictionary['results'][0]['title'])
+print(news_dictionary['results'][0]['title'])
 
 
 api_news_title = news_dictionary['results'][0]['title']
