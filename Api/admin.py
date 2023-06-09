@@ -11,6 +11,8 @@ class NewsAdmin(admin.ModelAdmin):
    
 admin.site.register(News, NewsAdmin)
 
+admin.site.register(Movies)
+
 
 class Meta:
     verbose_name_plural = "News"
