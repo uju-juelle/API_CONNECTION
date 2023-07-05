@@ -43,5 +43,5 @@ class generate_movies(APIView):
             rating = a["results"][i]["popularity"]
             Movies.objects.create(title=title, content=content, rating=rating)
 
-        return HttpResponse("Generated movies successfully")
+        return HttpResponse("Generated movies successfully 
 
