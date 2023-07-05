@@ -9,15 +9,15 @@ from django.http import HttpResponse
 from decouple import config
 
 
-# class Homepage(ListCreateAPIView):
-#     queryset = News.objects.all()
-#     serializer_class = NewsSerializer
+class Homepage(ListCreateAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializer
     
 
-# class detailpage(RetrieveUpdateDestroyAPIView):
-#     queryset = News.objects.all()
-#     serializer_class = NewsSerializer
-#     lookup_field = "id"
+class detailpage(RetrieveUpdateDestroyAPIView):
+    queryset = News.objects.all()
+    serializer_class = NewsSerializer
+    lookup_field = "id"
 
 
 
