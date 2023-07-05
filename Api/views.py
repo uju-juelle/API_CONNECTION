@@ -36,7 +36,7 @@ class generate_movies(APIView):
 
         my_count = Movies.objects.count()
 
-        for i in range(my_count, my_count + 10
+        for i in range(my_count, my_count + 10):
 
             title = a["results"][i]["original_title"]
             content = a["results"][i]["overview"]
